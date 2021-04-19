@@ -1,8 +1,8 @@
 var mycanvas = new fabric.Canvas('o');
 playerx=10;
 playery=10;
-blockimage_height=30;
-blockimage_width=30;
+blockimage_height=100;
+blockimage_width=100;
 player_object="";
 var blockimage_object="";
 function player_update()
@@ -42,42 +42,73 @@ function mykeydown(e){
     
   }
   if (keypressed=="87"){
-    new_image("wall.jpg");console.log("W");
+    new_image("hulkd_body.png");console.log("W");
     
   }
   if (keypressed=="71"){
-    new_image("ground.png");console.log("G");
+    new_image("hulk_legs.png");console.log("G");
     
   }
   if (keypressed=="116"){
-    new_image("trunk.jpg");console.log("t");
+    new_image("hulk_right_hand.png");console.log("t");
     
   }
   if (keypressed=="89"){
-    new_image("yellow_wall.png");console.log("Y");
+    new_image("hulk_left_hand.png");console.log("Y");
     
   }
   if (keypressed=="82"){
-    new_image("roof.jpg");console.log("R");
+    new_image("hulk_face.png");console.log("R");
     
   }
   if (keypressed=="85"){
-    new_image("unique.png");console.log("U");
+    new_image("ironman_body.png");console.log("U");
     
   }
   if (keypressed=="76"){
-    new_image("light_green.png");console.log("L");
+    new_image("ironman_face.png");console.log("L");
     
   }
   if (keypressed=="68"){
-    new_image("dark_green.png");console.log("D");
+    new_image("ironman_legs.png");console.log("D");
     
   }
   if (keypressed=="67"){
-    new_image("cloud.jpg");console.log("C");
+    new_image("ironman_left_hand.png");console.log("C");
     
   }
-  
+  if (keypressed=="65"){
+    new_image("ironman_right_hand.png");console.log("A");
+    
+  }
+  if (keypressed=="66"){
+    new_image("spiderman_right_hand.png");console.log("B");
+    
+  }
+  if (keypressed=="69"){
+    new_image("spiderman_left_hand.png");console.log("E");
+    
+  }
+  if (keypressed=="70"){
+    new_image("spiderman_body.png");console.log("F");
+    
+  }
+  if (keypressed=="72"){
+    new_image("spiderman_legs.png");console.log("H");
+    
+  }
+  if (keypressed=="73"){
+    new_image("thor_face.png");console.log("I");
+    
+  }
+  if (keypressed=="74"){
+    new_image("thor_left_hand.png");console.log("J");
+    
+  }
+  if (keypressed=="74"){
+    new_image("thor_right_hand.png");console.log("J");
+    
+  }
 } 
 function moveup()
  { if(playery >=0)
